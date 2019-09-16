@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Места низ светот</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="fontawesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+        function func(x) {
+            if(x==0){
+                document.getElementById('prvid').style.display='block';
+                document.getElementById('vtorid').style.display='none';
+                document.getElementById('tretid').style.display='none';
+            }
+
+            else if(x==1){
+                document.getElementById('prvid').style.display='none';
+                document.getElementById('tretid').style.display='none';
+                document.getElementById('vtorid').style.display='block';
+            }
+            else
+            {
+                document.getElementById('prvid').style.display='none';
+                document.getElementById('vtorid').style.display='none';
+                document.getElementById('tretid').style.display='block';
+            }
+
+            return;
+        }
+    </script>
+</head>
+<body id="placeId">
+<!--NAVIGATION-->
+<div class="navbar-collapse  navbar-expand-lg bg-light mt-3 ml-5 mr-5 rounded-pill shadow p-3 mb-5 bg-white rounded">
+    <div class="container text-center">
+        <ul class="navbar-nav mr-5">
+            <li class="nav-item shadow p-0 mb-1 bg-white rounded-circle">
+                <img src="logo.png" class="rounded-circle"/>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase " href="Main.html"><span class="fa fa-home"></span> Дома</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase" href="#placesId"><span class="fa fa-map"></span> Места низ светот</a>
+            </li>
+            <li class="nav-item ml-4">
+                <a class="nav-link text-uppercase" href="#"><span class="fa fa-plane"></span> Туристички агенции</a>
+            </li>
+            <li class="nav-item ml-5">
+                <form class="navbar-form navbar-right" action="#">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Пребарувај">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="fa fa-search"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--NAVIGATION-->
+<!--RADIOBUTTON-->
+<div class="container-fluid ml-5">
+<input type="radio" name="rad" onclick="func(0)" class="ml-5" checked/>Најскапи дестинации
+<input type="radio" name="rad" onclick="func(1)" class="ml-5"/>Најевтини дестинации
+<input type="radio" name="rad" onclick="func(2)" class="ml-5"/>Најпосетени дестинации
+</div>
+<!--RADIOBUTTON-->
+
+
+<!--CARD-->
+<div class="container-fluid" id="prvid">
+    <div class="row mt-3 mb-3" >
+        <div class="col-md-3 col-sm-6" >
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/dubai.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Дубаи, Обединетите Арапски Емирати</h5>
+                    <p class="card-text">Кога станува збор за Дубаи, раскошот и трошоците достигнуваат нови височини. Се тврди дека Бурџ Ал Арап Jумеира е единствениот светски хотел со седум sвезди. Градот има човечки направени острови во облик на палма, полн со паркови од вода и морски животни; затворен ски-центар; ултра луксузен шопинг во десетици трговски центри, вклучувајќи го и раскошниот трговски центар на Емиратите;како и доста скап ноќен живот.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/london.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Лондон, Англија</h5>
+                    <p class="card-text">Во Лондон е лесно да потрошите многу пари при посета на овој светски познат град, а во просек 500 долари за едноноќен престој не е нешто евтино.И скапиот превоз не ви го олеснуваат високиот трошок за патување тука. Имајте на ум дека, исто така, допрва треба да уживате во вашите авантуристички патувања кои ќе вклучат вкус на шампањ додека се возите The Eye (највисокото тркало на Ферис во светот).</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/newyork.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Њујорк, САД</h5>
+                    <p class="card-text">Целата почит кон Сан Франциско и експлозијата на високи цени на недвижностите поттикнати од Силиконската долина, но просечните цени на хотелите во Менхетен и неговите околина сè уште го надминуваат градот the West Coast, давајќи му на Њујорк блага предност. Сепак можете да најдете ефтини крстарења во надворешните краеви, со оглед на цената на шоуто на Бродвеј, влегувањето во музеите, возењето со Uber и такси и бутик шопингот, лесно е да потрошите дури 1.000 долари на ден за истражување на овој град.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/oslo.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Осло, Норвешка</h5>
+                    <p class="card-text">Заради високите нивоа на плати и номиналната економска различност во Норвешка имаме високите цени во Осло. Тоа значи дека лицето што ќе ве послужи пиво заработува плата за живеење - но исто така значи дека сè е поскапо од повеќето други европски локали. Земјата, исто така, има некои од највисоките цени на бензинот во светот како резултат на агресивните полиси за оданочување.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/paris.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Париз, Франција</h5>
+                    <p class="card-text">Со просечна хотелска цена за една ноќ што е околу 500 американски долари, Градот на светлината ги собира трошоците - и тоа пред да ги пресметате трошоците за целото јадење, шопинг и музеј. Според индексот на трошоците на живот, тоа е еден од најскапите градови во Европа. 300 долари по оброк за лице во  Le Jules Verne, кој се наоѓа на вториот кат на Ајфеловата кула, но секогаш можете да исцртате свежа багета, шише вино и малку сирење од локална продавница.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/reykjavik.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Рејкјавик, Исланд</h5>
+                    <p class="card-text">Денес Рејкјавик е центар на Пошироката Рејкјавик област, која со население од 202 000 жители е единствената метрополитска област во Исланд. Како современ главен град на една од најразвиените држави во светот, неговите жители уживаат во првокласен систем на социјална згриженост и градска инфраструктура. Поради неговата лоцираност блиску до Арктичкиот појас добива 4 часа дневна светлина за време на најкраткиот ден од зимата; за време на летото, ноќите се светли речиси како деновите. Рејкјавик во магазинот Грист е рангиран на прво место на листата „15 најеколошки градови„ во 2008 година.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/singapur.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Cингапур</h5>
+                    <p class="card-text">Островскиот град Сингапур се рангира како најскап град во светот пет години по ред. Причината е високата цена на транспортот; тоа е најскапото место во светот за купување и употреба на автомобил. Но, цените за сè - од облека до намирници до шише вино со маса (24 долари во просек) се многу високи. Една ноќ во апартманот Шангри-Ла на 17-ти кат од истоимениот хотел може да достигне над 8000 американски долари. Но, обичните смртници веројатно можат да најдат престој во различни хотели за околу 200 американски долари.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/sydney.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Сиднеј, Австралија</h5>
+                    <p class="card-text">За повеќето луѓе, летот само до Сиднеј ќе чини прилично скапо, со цени од околу 1.000 американски долари. Овој град е најскапата локација во Австралија. За среќа, откако ќе пристигнете, просечниот ноќен престој нема да ве чини многу - но за 375 долари за ноќ, тоа не е баш ефтино. Воздушна турнеја низ градот преку морскиот брод каде летот од 15 минути чини 200 долари.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/telaviv.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Тел Авив, Израел</h5>
+                    <p class="card-text">Тел Авив доаѓа со огромни трошоци за недвижнини, како и високи цени за повеќе патувања оддалечени од артикали, намирници, сместувачки капацитети и превоз. Патувањето по ефтина цена одвај може да се направи за помалку од 100 американски долари на ден. Буџет од 500 долари на ден може да биде пак недоволно. Причините за високите цени се комплексни (размислете за густа владина бирократија и надзор, огромни трошоци за увоз и набавки на регулативи).</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="expensive/zurich.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Цирих, Швајцарија</h5>
+                    <p class="card-text"> Цирих може да се пофали со нешто понизок просечен престој во хотел (околу 450 американски долари), но неговиот профит е од жителите кои работат во многу банки и инвестициски фирми во градот кои обезбедуваат многу длабоки џебови. Трошоците за забава и рекреација се постојано високи, и овде, во најголемиот град во земјата, како и низ цела Швајцарија.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!--CARD-->
+
+<div class="container-fluid" id="tretid">
+    <div class="row mt-3 mb-3" >
+        <div class="col-md-3 col-sm-6" >
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/bali.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Бали, Индонезија</h5>
+                    <p class="card-text"> 8.43 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/bangkok.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Бангкок, Тајланд</h5>
+                    <p class="card-text">21.98 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/barselona.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Барселона, Шпанија</h5>
+                    <p class="card-text">9.06 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/hongkong.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Хонг Конг</h5>
+                    <p class="card-text">9.11 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/london.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Лондон, Англија</h5>
+                    <p class="card-text">20.42 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/milan.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Милано, Италија</h5>
+                    <p class="card-text">9.19 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/osaka.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Осака, Јапонија</h5>
+                    <p class="card-text">8.78 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/palmademallorca.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Палма де Мајорка, Шпанија</h5>
+                    <p class="card-text">9.3 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/paris.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Париз, Франција</h5>
+                    <p class="card-text">17.95 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="visited/seul.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Сеул, Јужна Кореја</h5>
+                    <p class="card-text">10.95 милиони интернационални посетители</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container-fluid" id="vtorid">
+    <div class="row mt-3 mb-3" >
+        <div class="col-md-3 col-sm-6" >
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/lagos.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Лагос, Нигерија</h5>
+                    <p class="card-text">Лагос, а многу ретко познат и како Еко според јорупскиот назив, е најголемиот град во Нигерија. Проценките за бројот на жителите на градот значително варираат, но генерално тие се движат во границите од 10 до 15,5 милиони луѓе, правејќи го притоа вториот најголем град во Африка (по Каиро). <br><b>Хотели по цена од: 10 долари/ноќ.<br>Просечен дневен трошок по лице: 145,69 долари.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/beijing.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Пекинг, Кина</h5>
+                    <p class="card-text">Пекинг главен град на Народна Република Кина и еден од најнаселените градови во светот со население од околу 19,612,368 жители во 2010 година. Пекинг е политички, културен и образовен центар на државата,[3] и истиот е дом на најголемите државни компании во Кина. Оваа метропола се наоѓа во северна Кина и се граничи со Хебеј на север, запад, југ и исток и со Тјенѓин на југоисток. <br><b>Хотели по цена од: 8 долари/ноќ.<br>Просечен дневен трошок по лице: 143.94 долари.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/chania.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Хања, Крит</h5>
+                    <p class="card-text">Хања е пристаништен град на островот Крит, Грција, и втор град по големина на островот Крит.<br><b>Хотели по цена од: 21 долари/ноќ.<br>Просечен дневен трошок по лице: 143.50 долари.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/mexico.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Мексико Сити, Мексико</h5>
+                    <p class="card-text">Мексико најголем и главен град во Мексико а воедно е и истоимен Федерален дистрикт. Градот има 8.657.045, додека вкупната градска алгомерација има 22.095.047 жители.
+
+                        Подрачјето на оваа метропола, се смета за најбро растење на земјите. Така силниот пораст штети од една страна големо доселување во Мексико, а од друга високиот прираст на населението. Во pградот е и центарот на надбискупијата. Овде е политичкото и културното средиште.<b><br>Хотели по цена од: 7 долари/ноќ.<br>Просечен дневен трошок по лице: 142.46 долари.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/marrakech.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Маракеш, Мароко</h5>
+                    <p class="card-text">Маракеш познат и како „црвениот град“, е град во југозападен Мароко, на падините на Атласките Планини. Градот имал 1.070.838 жители[1] според пописот од 2004.
+
+                        Како и многу други северноафрикански градови, Маракеш има две главни области: стариот град (медина) и модерниот град.
+
+                        Меѓународниот аеродром Менара го опслужува Маракеш и околните градови.<b><br>Хотели по цена од: 7 долари/ноќ.<br>Просечен дневен трошок по лице: 142.43 долари.</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div  class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img class="card-img-top" src="cheap/joannesburg.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Јоханесбург, Јужноафриканската Република</h5>
+                    <p class="card-text">Јоханесбург е најнаселениот град во Јужноафриканската Република и третиот најнаселен град во Африка, по Каиро и Лагос. Жителите му дале прекари на градот, како "Jo'burg", "Jozi" и "eGoli". Јоханесбург е провинциски главен град на провинцијата Гаутенг, најбогатата провинција во ЈАР и место каде се наоѓа уставниот суд на Јужна Африка.<b><br>Хотели по цена од: 9 долари/ноќ.<br>Просечен дневен трошок по лице: 139.23 долари.</b></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!--Footer-->
+<div class="container-fluid bg-light shadow p-3 mb-5 bg-white rounded">
+    <footer class="page-footer font-small blue pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Контакт информации:</h5>
+                    <p>E-mail: slavicagabreshanec@gmail.com <br> Телефонски број: 071234567</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+
+
+
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Линкови</h5>
+
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="https://www.facebook.com/" ><span class="fa fa-facebook" ></span></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=en"><span class="fa fa-instagram"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=en"><span class="fa fa-twitter"></span></a>
+                        </li>
+                        <li>
+                            <a href="https://accounts.google.com/"><span class="fa fa-google"></span></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-primary">© 2019 Copyright:
+            <a href="https://www.facebook.com/cacii.gabreshanec?ref=bookmarks" class="text-black-50"> Славица Габрешанец</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+</body>
+</html>
